@@ -1,0 +1,25 @@
+﻿  CCollisionAABB.cpp
+  CCollisionBase.cpp
+  CCollisionSphere.cpp
+  CCore.cpp
+  CDx.cpp
+  CDxCamera.cpp
+  CDxFont.cpp
+c:\users\administrator\documents\vtxprac\myengine\cdxfont.cpp(38): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\documents\vtxprac\myengine\cdxfont.cpp(45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\documents\vtxprac\myengine\cdxfont.cpp(44): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\documents\vtxprac\myengine\cdxfont.cpp(43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\documents\vtxprac\myengine\cdxfont.cpp(42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CDxGrid.cpp
+  CDxTexture.cpp
+  CDxTextureAnim.cpp
+c:\users\administrator\documents\vtxprac\myengine\cdxtextureanim.cpp(16): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\documents\vtxprac\myengine\cdxtextureanim.cpp(26): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\documents\vtxprac\myengine\cdxtextureanim.cpp(31): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CInputManager.cpp
+  CMyGame.cpp
+  CVertexCube.cpp
+  CVertexTxtr.cpp
+  WinMain.cpp
+  코드를 생성하고 있습니다...
+  MyEngine.vcxproj -> C:\Users\Administrator\Documents\vtxPrac\MyEngine\Debug\MyEngine.exe

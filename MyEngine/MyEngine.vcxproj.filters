@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MyGame">
+      <UniqueIdentifier>{1f938826-633d-40b3-9b60-3a4c4a213644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Core\Global">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Core\Texture">
+      <UniqueIdentifier>{5031bc48-1caf-4bc2-875b-d776859929d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Font">
+      <UniqueIdentifier>{2870da90-dea4-4dca-b3bd-79910cedcb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Input">
+      <UniqueIdentifier>{6918e198-951f-4b9e-8da4-6b59fd5725ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Dx">
+      <UniqueIdentifier>{351aeb0e-95b9-447a-b75c-2ee91eb4cc51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Collision">
+      <UniqueIdentifier>{ca76fb3b-7128-47fc-bac6-7230b6362932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Camera">
+      <UniqueIdentifier>{ad47e21e-59fe-41ff-ae2b-0835910c32f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Etc">
+      <UniqueIdentifier>{4672b25a-87f6-477e-809a-709ebc960bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyGame\Vertex Render">
+      <UniqueIdentifier>{96ececd3-ec80-434e-bfa9-e0eb55a74d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyGame\Vertex Render\Cube">
+      <UniqueIdentifier>{1af7d10d-5ac9-47cb-a60e-01c952030394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyGame\Vertex Render\Texture">
+      <UniqueIdentifier>{dc2548fe-1ea2-40f3-a550-78bc621cfb3c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.h">
+      <Filter>Core\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Core\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CMyGame.h">
+      <Filter>MyGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxTexture.h">
+      <Filter>Core\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxTextureAnim.h">
+      <Filter>Core\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxFont.h">
+      <Filter>Core\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="CInputManager.h">
+      <Filter>Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CDx.h">
+      <Filter>Core\Dx</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollisionAABB.h">
+      <Filter>Core\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollisionBase.h">
+      <Filter>Core\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollisionSphere.h">
+      <Filter>Core\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>MyGame\Vertex Render</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxCamera.h">
+      <Filter>Core\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CDxGrid.h">
+      <Filter>Core\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="CVertexCube.h">
+      <Filter>MyGame\Vertex Render\Cube</Filter>
+    </ClInclude>
+    <ClInclude Include="CVertexTxtr.h">
+      <Filter>MyGame\Vertex Render\Texture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMyGame.cpp">
+      <Filter>MyGame</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>MyGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxTexture.cpp">
+      <Filter>Core\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxTextureAnim.cpp">
+      <Filter>Core\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxFont.cpp">
+      <Filter>Core\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="CInputManager.cpp">
+      <Filter>Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="CDx.cpp">
+      <Filter>Core\Dx</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollisionAABB.cpp">
+      <Filter>Core\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollisionBase.cpp">
+      <Filter>Core\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CCollisionSphere.cpp">
+      <Filter>Core\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxCamera.cpp">
+      <Filter>Core\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CDxGrid.cpp">
+      <Filter>Core\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="CVertexCube.cpp">
+      <Filter>MyGame\Vertex Render\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="CVertexTxtr.cpp">
+      <Filter>MyGame\Vertex Render\Texture</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
