@@ -45,6 +45,7 @@ public:
 	//	±×¸®µå.
 	CDxGrid*	m_pGrid;
 	CVertexCube* m_pVCube;
+	CVertexTxtr* m_pVTxtr;
 	//------------------------------------------	
 	CDxTexture*	m_pTex;
 };// class CMyGame :	public CCore

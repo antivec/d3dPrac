@@ -10,7 +10,7 @@ private:
 public:
 	virtual HRESULT InitVB(LPDIRECT3DDEVICE9 pDev);
 	virtual HRESULT	InitIB();
-	virtual HRESULT InitCube();
+	virtual HRESULT RenderCube();
 public:
 	CVertexCube();
 };

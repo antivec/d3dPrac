@@ -140,7 +140,7 @@ HRESULT CVertexCube::InitIB()
 
 	return S_OK;
 }
-HRESULT CVertexCube::InitCube()
+HRESULT CVertexCube::RenderCube()
 {
 
 	m_dev->GetRenderState(D3DRS_CULLMODE, &dCullMode);

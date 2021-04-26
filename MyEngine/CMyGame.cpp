@@ -9,13 +9,7 @@ CMyGame::~CMyGame()	{}
 //============================================
 //	인덱스 버퍼 4)
 //	-	버텍스 버퍼 초기화.
-HRESULT CMyGame::InitTexture()
-{
-	m_pTex = new CDxTexture();
-	m_pTex->Create(GetDev(), "texture/wallpape.jpg", false);
 
-	return S_OK;
-}
 
 void CMyGame::SetMatrix()
 {
@@ -42,7 +36,11 @@ INT		CMyGame::Init()
 	m_pGrid->Create(GetDev());
 
 	m_pVCube = new CVertexCube();
+	m_pVCube->InitVB(GetDev());
+	m_pVCube->InitIB();
 
+	m_pVTxtr = new CVertexTxtr();
+	m_pVTxtr->InitVB(GetDev());
 
 	return 0;
 
@@ -66,10 +64,9 @@ INT		CMyGame::Render3D()
 	//	월드 행렬 설정.
 	SetMatrix();	
 
-	// 현재 은면제거 상태 확인.
-	m_pVCube->InitVB(GetDev());
-	m_pVCube->InitIB();
-	m_pVCube->InitCube();
+	m_pVCube->RenderCube();
+
+	m_pVTxtr->RenderCube();
 
 	return 0;
 
@@ -107,6 +104,7 @@ void	CMyGame::Destroy()
 	//	-	인덱스 버퍼 정리.
 	SAFE_DELETE(m_pTex);
 	SAFE_DELETE(m_pVCube);
+	SAFE_DELETE(m_pVTxtr);
 }
 //============================================
 LRESULT CMyGame::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)

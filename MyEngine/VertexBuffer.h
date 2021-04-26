@@ -49,5 +49,5 @@ struct SVtxDTxtr
 	}
 	//-------------------------------
 };
-#define D3DFVF_CUSTOM ( D3DFVF_XYZ | D3DFVF_DIFFUSE)
+#define D3DFVF_CUSTOM ( D3DFVF_XYZ | D3DFVF_DIFFUSE | D3DFVF_TEX1) //설정 필요
 //===============================================================
