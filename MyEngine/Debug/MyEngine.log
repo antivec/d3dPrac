@@ -19,7 +19,9 @@ c:\users\administrator\documents\vtxprac\myengine\cdxtextureanim.cpp(31): warnin
   CInputManager.cpp
   CMyGame.cpp
   CVertexCube.cpp
+  CVertexTxNorm.cpp
   CVertexTxtr.cpp
   WinMain.cpp
   코드를 생성하고 있습니다...
+  LINK : C:\Users\Administrator\Documents\vtxPrac\MyEngine\Debug\MyEngine.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   MyEngine.vcxproj -> C:\Users\Administrator\Documents\vtxPrac\MyEngine\Debug\MyEngine.exe

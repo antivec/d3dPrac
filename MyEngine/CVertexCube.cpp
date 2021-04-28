@@ -52,29 +52,29 @@ HRESULT CVertexCube::InitVB(LPDIRECT3DDEVICE9 pDev)
 
 	SVtxD vtx[8];
 
-	vtx[0]._pos = D3DXVECTOR3(-1, 1, -1);
+	vtx[0]._pos = D3DXVECTOR3(-5, 1, -1);
 	vtx[0]._color = 0xffff0000;
 
-	vtx[1]._pos = D3DXVECTOR3(1, 1, -1);
+	vtx[1]._pos = D3DXVECTOR3(-3, 1, -1);
 	vtx[1]._color = 0xff00ff00;
 
-	vtx[2]._pos = D3DXVECTOR3(-1, -1, -1);
+	vtx[2]._pos = D3DXVECTOR3(-5, -1, -1);
 	vtx[2]._color = 0xff00ff00;
 
-	vtx[3]._pos = D3DXVECTOR3(1, -1, -1);
+	vtx[3]._pos = D3DXVECTOR3(-3, -1, -1);
 	vtx[3]._color = 0xff0000ff;
 
 	// z = 1
-	vtx[4]._pos = D3DXVECTOR3(-1, 1, 1); //( 0 : 4)
+	vtx[4]._pos = D3DXVECTOR3(-5, 1, 1); //( 0 : 4)
 	vtx[4]._color = 0x00000000;
 
-	vtx[5]._pos = D3DXVECTOR3(1, 1, 1); // ( 1 : 5)
+	vtx[5]._pos = D3DXVECTOR3(-3, 1, 1); // ( 1 : 5)
 	vtx[5]._color = 0x00000000;
 
-	vtx[6]._pos = D3DXVECTOR3(-1, -1, 1); // (2 : 7)
+	vtx[6]._pos = D3DXVECTOR3(-5, -1, 1); // (2 : 7)
 	vtx[6]._color = 0xff00ff00;
 
-	vtx[7]._pos = D3DXVECTOR3(1, -1, 1); // ( 3: 6 )
+	vtx[7]._pos = D3DXVECTOR3(-3, -1, 1); // ( 3: 6 )
 	vtx[7]._color = 0xff0000ff;
 
 	// Á¤Á¡¹öÆÛ¸¦ »ý¼ºÇÑ´Ù.
@@ -106,12 +106,12 @@ HRESULT CVertexCube::InitIB()
 {
 	SIdx indices[] =
 	{
-		{ 0,1,2 },{ 1,3,2 }, //¾Õ¸é
-		{4,5,6},{5,7,6}, //µÞ¸é
-		{0,4,2},{4,6,2}, //¿ÞÂÊ¿·
-		{2,6,7},{7,3,2}, // ¾Æ·§¸é
-		{0,4,5},{5,1,0}, //À­¸é
-		{1,5,7} ,{7,3,1} //¿À¸¥ÂÊ¿·
+		{ 2,0,1 },{ 2,1,3 }, //¾Õ¸é
+		{2,0,4},{2,4,6}, //¿ÞÂÊ¿·
+		{2,6,7},{2,7,3}, // ¾Æ·§¸é
+		{1,5,7} ,{1,7,3}, //¿À¸¥ÂÊ¿·
+		{0,4,5},{0,5,1}, //À­¸é
+		{6,4,5},{6,5,7} //µÞ¸é
 	};
 
 	if (FAILED(m_dev->CreateIndexBuffer(

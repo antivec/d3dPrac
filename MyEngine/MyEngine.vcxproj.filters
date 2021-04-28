@@ -99,6 +99,9 @@
     <ClInclude Include="CVertexTxtr.h">
       <Filter>MyGame\Vertex Render\Texture</Filter>
     </ClInclude>
+    <ClInclude Include="CVertexTxNorm.h">
+      <Filter>MyGame\Vertex Render\Texture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CMyGame.cpp">
@@ -144,6 +147,9 @@
       <Filter>MyGame\Vertex Render\Cube</Filter>
     </ClCompile>
     <ClCompile Include="CVertexTxtr.cpp">
+      <Filter>MyGame\Vertex Render\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="CVertexTxNorm.cpp">
       <Filter>MyGame\Vertex Render\Texture</Filter>
     </ClCompile>
   </ItemGroup>

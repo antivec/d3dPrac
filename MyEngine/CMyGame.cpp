@@ -42,6 +42,9 @@ INT		CMyGame::Init()
 	m_pVTxtr = new CVertexTxtr();
 	m_pVTxtr->InitVB(GetDev());
 
+	m_pVtxNorm = new CVertexTxNorm();
+	m_pVtxNorm->InitVB(GetDev());
+
 	return 0;
 
 }//	INT		CMyGame::Init()
@@ -68,6 +71,7 @@ INT		CMyGame::Render3D()
 
 	m_pVTxtr->RenderCube();
 
+	m_pVtxNorm->RenderCube();
 	return 0;
 
 }//	INT		CMyGame::Render()

@@ -132,6 +132,7 @@
     <ClInclude Include="CInputManager.h" />
     <ClInclude Include="CMyGame.h" />
     <ClInclude Include="CVertexCube.h" />
+    <ClInclude Include="CVertexTxNorm.h" />
     <ClInclude Include="CVertexTxtr.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Util.h" />
@@ -151,6 +152,7 @@
     <ClCompile Include="CInputManager.cpp" />
     <ClCompile Include="CMyGame.cpp" />
     <ClCompile Include="CVertexCube.cpp" />
+    <ClCompile Include="CVertexTxNorm.cpp" />
     <ClCompile Include="CVertexTxtr.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>

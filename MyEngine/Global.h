@@ -32,6 +32,7 @@
 #include "CCore.h"
 #include "CVertexCube.h"
 #include "CVertexTxtr.h"
+#include "CVertexTxNorm.h"
 //========================================================
 
 #include "VertexBuffer.h"

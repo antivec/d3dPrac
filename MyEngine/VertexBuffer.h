@@ -35,19 +35,37 @@ struct SVtxDTxtr
 {
 	//-------------------------------
 	D3DXVECTOR3 _pos;		//	정점 위치
-	D3DCOLOR    _color;		//	색깔
+
 	float _u, _v;			//	텍스쳐 좌표.
 	//-------------------------------
 	SVtxDTxtr() { ZeroMemory(this, sizeof(this)); }
 	//-------------------------------	
-	SVtxDTxtr(D3DXVECTOR3 pos, D3DCOLOR color, float u, float v)
-	{
-		_pos = pos;
-		_color = color;
-		_u = u;
-		_v = v;
-	}
+
+	SVtxDTxtr(float x, float y, float z, float u, float v) { SVtxDTxtr(D3DXVECTOR3(_pos.x, _pos.y, _pos.z), u, v); }
+	SVtxDTxtr(D3DXVECTOR3 pos, float u, float v) { _pos = pos; _u = u; _v = v; }
 	//-------------------------------
 };
-#define D3DFVF_CUSTOM ( D3DFVF_XYZ | D3DFVF_DIFFUSE | D3DFVF_TEX1) //설정 필요
+
+struct SVtxTxtrNormal
+{
+	//-------------------
+	D3DXVECTOR3 _pos;	//	정점 위치	
+	D3DXVECTOR3 _normal;	//	노멀 위치
+	float _u, _v;		//	텍스쳐 좌표.
+	//-------------------
+	SVtxTxtrNormal() { ZeroMemory(this, sizeof(this)); }
+	//-------------------
+	SVtxTxtrNormal(D3DXVECTOR3 pos, D3DXVECTOR3 normal, float u, float v)
+	{
+		_pos = pos;
+		_u = u;
+		_v = v;
+		_normal = normal;
+	}
+	//-------------------
+};
+
+#define D3DFVF_CUSTOM ( D3DFVF_XYZ | D3DFVF_DIFFUSE) //설정 필요
+#define D3DFVF_XYZTEX	(D3DFVF_XYZ | D3DFVF_TEX1)
+#define D3DFVF_XYZTEXNORMAL	(D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1)
 //===============================================================

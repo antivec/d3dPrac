@@ -9,7 +9,6 @@ private:
 	DWORD dCullMode = 0;
 public:
 	virtual HRESULT InitVB(LPDIRECT3DDEVICE9 pDev);
-	void SetLight();
 	virtual HRESULT RenderCube();
 	HRESULT InitTexture();
 };
