@@ -2,7 +2,7 @@
 HRESULT CVertexTxtr::InitTexture()
 {
 	m_pTex = new CDxTexture();
-	m_pTex->Create(m_dev, "texture/brick.jpg", false);
+	m_pTex->Create(m_dev, "texture/wallpape.jpg", false);
 
 	return S_OK;
 }

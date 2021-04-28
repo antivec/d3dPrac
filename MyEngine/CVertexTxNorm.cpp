@@ -25,7 +25,7 @@ void CVertexTxNorm::SetLight()
 	D3DXVECTOR3 vecDir;
 	D3DLIGHT9 light;
 	memset(&light, 0, sizeof(D3DLIGHT9));
-	light.Type = D3DLIGHT_SPOT;	//	조명 종류.
+	light.Type = D3DLIGHT_DIRECTIONAL;	//	조명 종류.
 	light.Diffuse.r = 1.0f;				//	조명 색상.
 	light.Diffuse.g = 1.0f;
 	light.Diffuse.b = 1.0f;

@@ -53,7 +53,7 @@ HRESULT CVertexCube::InitVB(LPDIRECT3DDEVICE9 pDev)
 	SVtxD vtx[8];
 
 	vtx[0]._pos = D3DXVECTOR3(-5, 1, -1);
-	vtx[0]._color = 0xffff0000;
+	vtx[0]._color = 0xff0000ff;
 
 	vtx[1]._pos = D3DXVECTOR3(-3, 1, -1);
 	vtx[1]._color = 0xff00ff00;
@@ -62,14 +62,14 @@ HRESULT CVertexCube::InitVB(LPDIRECT3DDEVICE9 pDev)
 	vtx[2]._color = 0xff00ff00;
 
 	vtx[3]._pos = D3DXVECTOR3(-3, -1, -1);
-	vtx[3]._color = 0xff0000ff;
+	vtx[3]._color = 0xffff0000;
 
 	// z = 1
 	vtx[4]._pos = D3DXVECTOR3(-5, 1, 1); //( 0 : 4)
-	vtx[4]._color = 0x00000000;
+	vtx[4]._color = 0xffff0000;
 
 	vtx[5]._pos = D3DXVECTOR3(-3, 1, 1); // ( 1 : 5)
-	vtx[5]._color = 0x00000000;
+	vtx[5]._color = 0xff00ff00;
 
 	vtx[6]._pos = D3DXVECTOR3(-5, -1, 1); // (2 : 7)
 	vtx[6]._color = 0xff00ff00;
@@ -112,10 +112,10 @@ HRESULT CVertexCube::InitIB()
 		{1,5,7} ,{1,7,3}, //오른쪽옆
 		{0,4,5},{0,5,1}, //윗면
 		{6,4,5},{6,5,7} //뒷면
-	};
+	}; //indices 순서 변경 필요 <- 면 투명화
 
 	if (FAILED(m_dev->CreateIndexBuffer(
-		12 * sizeof(SIdx), //indices array 개수
+		sizeof(indices), //indices array 개수
 		0,
 		D3DFMT_INDEX16,
 		D3DPOOL_DEFAULT,
